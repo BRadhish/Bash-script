@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p 'Enter your name :' username
+read -sp 'Enter the password :' password 
+echo "Thank you $username "
+echo "Your password has been saved "
+
+
+
