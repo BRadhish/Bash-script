@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "enter 1 to show the vsftpd status"
+echo "enter 2 to show the stop the service" 
+echo "enter the number"
+
+read num
+if [ $num -eq  1 ]
+then
+	service vsftpd status
+	echo "service status"
+    echo "enter 1 to start the vsftpd status"
+		echo "enter the input"
+		read no
+		if [ $no -eq 1 ]
+		then
+			service vsftpd start
+			echo "service started"
+		else
+			echo "no action required"
+		fi
+
+elif [ $num -eq 2 ]
+then
+	service vsftpd stop
+	echo "service stoped"
+
+fi
