@@ -1,0 +1,14 @@
+
+#!/bin/bash
+echo "Enter the admin staus"
+read admin //Here I can get the admin status
+
+echo "Enter the power user status"
+read poweruser  //Here I can get the poweruser status
+
+if [ $admin == on -a $poweruser == on ]  //Here I can use the boolean operator to comppare admin and power status
+then
+service vsftpd start
+else
+echo "service not available"
+fi    //Here I can close the file
