@@ -1,0 +1,20 @@
+#!/bin/bash
+#Here I mention the website Name
+website=Facebook
+
+
+#Here I declare the variable username
+username=radhish.bau@example.com
+
+
+#Here I mention the password
+password=redhat
+
+#Print the variable
+
+echo "The website name is $website"
+echo "The account name is $username"
+echo "Your password is $password"
+
+#Here I mention the password count
+echo "The password count is ${#password}"
