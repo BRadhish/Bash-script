@@ -1,0 +1,16 @@
+#!/bin/bash
+let "add=10+2"
+echo "the addition is $add"
+
+let sub=76-45
+echo "The subraction is $sub"
+
+let mul=7*7
+echo "The multiplication is $mul"
+
+let remain=57%7
+echo "The remainder is $remain"
+
+let quotient=87/7
+echo "The quotient is $quotient"
+
