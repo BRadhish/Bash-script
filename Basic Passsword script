@@ -1,0 +1,7 @@
+#!/bin/bash
+#the script for verifying the password
+username=pradheep
+password=redhat
+echo "hello your username is $username" //Here using $ symbool I get the variable
+echo "your password is $password"
+echo "${#password}"
