@@ -1,0 +1,20 @@
+#!/bin/bash
+Declaring the arry :
+
+declare -a name=("radhish" "arjun" "raja")             #Here name is Array Name
+
+echo "The first name is ${name[0]}
+echo "The first name is ${name[1]}
+echo "The first name is ${name[2]}
+echo "The first name is ${name[3]}
+
+
+Update the array:
+
+name[3] = "ramu"
+name[4} = "vijay"
+
+
+Delete the array :
+
+unset name[1]
