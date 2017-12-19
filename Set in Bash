@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set laptop computer mobile        //Here I can set the variable
+
+echo "The first is " $1
+echo "The second is " $2
+echo "The third is " $3
+
+
+o/p:
+
+The first is laptop
+The second is computer
+The third is mobile
