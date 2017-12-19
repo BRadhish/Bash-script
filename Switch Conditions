@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "Press 1 to check the network status"
+echo "Press 1 to check the date"
+echo "Press 1 to check the uptime"
+echo "Press 1 to check the Last reboot"
+
+read -p "enter your choice" inp                //Here I get the user Input and store in inp
+
+case $inp in 
+
+1)
+service network status
+::
+
+2)
+date
+::
+
+3)
+uptime
+::
+
+4)
+last reboot
+::
+*)                                             //  Here * means All
+echo "The entered choice is not available"
+
+
+esac
