@@ -1,0 +1,42 @@
+syntax
+
+for variable in obj1 obj2 obj3
+do 
+
+commands
+done
+
+
+Syntax:2 
+
+for ((value;condition;operation/increment))
+do 
+commands
+done
+
+Example 1:
+
+
+for a in processor ram keyboard
+do  
+echo "The desktop contains" $a
+done
+ 
+output:
+
+The desktop contains processor
+The desktop contains ram
+The desktop contains keyboard
+
+Example 2 :
+a=10
+for ((b=5;a>b;b=$b+1))
+do 
+echo $b
+done
+
+output
+6
+7
+8
+9
