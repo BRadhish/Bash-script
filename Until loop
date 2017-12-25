@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ip=("192.168.10.4" "192.168.2.3" "192.168.10.6")   //Here I declare the IP inside the array
+until [ ${ip[@]} -eq 5 ]                           //Here using until loop it check the condition
+do
+read -p "Enter the fourth ip : " ip[3]
+read -p "Enter the fifth ip : " ip[4]
+echo "The No of available IP is " ${ip[@]}         //Finally it print the no of IP addresses
+done
