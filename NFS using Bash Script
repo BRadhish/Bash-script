@@ -18,6 +18,10 @@ echo "$fol $ip($per)"
 #refresh
 exportfs
 
+#starting Required Services
+service rpcbind start'
+service nfs start
+
 #checking
 
 showmount -e "your server IP"
