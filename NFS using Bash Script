@@ -1,0 +1,23 @@
+#install Nfs package 
+yum install nfs-utils -y
+
+#nfssharefolder
+
+read -p "Enter the share folder" fol
+
+#get the target ip
+
+read -p "enter your IP" ip
+
+#get the user permission 
+
+read -p  "enter the permission" per
+
+echo "$fol $ip($per)"
+
+#refresh
+exportfs
+
+#checking
+
+showmount -e "your server IP"
