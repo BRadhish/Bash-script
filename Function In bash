@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+services()
+{
+echo "Todays date is "
+date
+echo"Your system IP is "
+ip a
+echo "Your kernel version is "
+uname -r
+}
+
+
+services() //Here I call the services function
+
