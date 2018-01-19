@@ -1,0 +1,9 @@
+#!/bin/bash
+
+yum install httpd -y                  //Installing Http services
+echo "APache test page is Here" >> /var/www/html/index.html   //send the output to default hhtp file
+service httpd start   //start the services
+setenforce 0    
+service firewalld stop    //Stop the firewall settings
+
+///Here I automate the apache test page only
