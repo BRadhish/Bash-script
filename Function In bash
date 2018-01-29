@@ -11,6 +11,22 @@ echo "Your kernel version is "
 uname -r
 }
 
+ipdetails()
+{
+ifconfig
+}
 
+systemname()
+{
+hostname
+}
+
+select $r in services,ipdetails,systemname
+do
+echo $r
+done
+
+
+if you want to call use these
 services() //Here I call the services function
 
